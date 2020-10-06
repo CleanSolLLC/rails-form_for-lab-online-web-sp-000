@@ -1,13 +1,24 @@
+<<<<<<< HEAD
 <h2>School Class Form</h2>
 <%= form_for(@school_class) do |f| %>
   <div>
     <%= f.label :title %>
     <%= f.text_field :title %>
+=======
+<%= form_for school_class_path do |f| %>
+  <div>
+    <%= f.label :title %>
+    <%= f.text :title %>
+>>>>>>> 3d1c7d0154926a13c7218684a2545999ee9d41c7
  </div>
 
  <div>
    <%= f.label :room_number %>
+<<<<<<< HEAD
    <%= f.number_field :room_number %>
+=======
+   <%= f.text :room_number %>
+>>>>>>> 3d1c7d0154926a13c7218684a2545999ee9d41c7
 </div>
 
 <%= f.submit %>
